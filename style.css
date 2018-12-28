@@ -49,7 +49,6 @@ table {
 .menu-main{
     color: white;
 }
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300');
 .menu-main {
   list-style: none;
   height: 35px;
@@ -70,12 +69,12 @@ table {
 .menu-main li:last-child:after {content: none;}
 .menu-main a {
   text-decoration: none;
-  font-family: 'Open Sans Condensed', sans-serif;
-  letter-spacing: 2px;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1px;
   position: relative;
   padding-bottom: 20px;
   margin: 0 34px 0 30px;
-  font-size: 17px;
+  font-size: 18px;
   text-transform: uppercase;
   display: inline-block;
   transition: color .2s;
@@ -117,11 +116,13 @@ header {
 }
 .logo {
     position: absolute;
-    height: 116px;
-    width: 104px;
     background-color: #DA2020;
     top: -35px;
     left: 140px;
+    font-family: 'Lobster', cursive;
+    color: white;
+    padding: 50px 25px 10px 25px;
+    font-size: 3rem;
 }
 .slider {
     background-image: url(./images/india.png);
@@ -149,6 +150,18 @@ header {
 .facebook::after {
     content: '';
     background-image: url(./images/facebook.svg);
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    top: 4px;
+    left: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+}
+.facebook:hover::after {
+    content: '';
+    background-image: url(./images/facebook-hover.svg);
     position: absolute;
     height: 37px;
     width: 37px;
@@ -186,6 +199,18 @@ header {
     background-size: cover;
     z-index: 3;    
 }
+.linkedin:hover::after {
+    content: '';
+    background-image: url(./images/linkedin-hover.svg);
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    top: 4px;
+    left: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;    
+}
 .vkontakte {
     position: absolute;
     height: 47px;
@@ -214,6 +239,18 @@ header {
     background-size: cover;
     z-index: 3;   
 }
+.vkontakte:hover::after {
+    content: '';
+    background-image: url(./images/vk-hover.svg);
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    top: 4px;
+    left: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;      
+}
 .shadow {
     content: '';
     background-image: url(./images/shadow.png);
@@ -223,5 +260,103 @@ header {
     width: 397px;
     height: 35px;
     z-index: 2;
+}
+.info {
+    position: relative;
+    height: 65px;
+    height: 104px;
+}
+.profile-photo-card {
+    position: absolute;
+    height: 215px;
+    width: 192px;
+    background-color: white;
+    top: -112px;
+    left: 140px;
+    border-radius: 1px;
+    box-shadow: 0 0 10px 2px rgb(155, 155, 155);
+}
+.profile-photo {
+    background-image: url(./images/photo.png);
+    width: 176px;
+    height: 199px;
+    margin-top: 8px;
+    margin-left: 8px;
+    background-position-x: -78px;
+    background-position-y: -47px;
+    background-size: 310px;
+}
+.title {
+    font-size: 2rem;
+    font-family: 'Thasadith', sans-serif;
+    padding-left: 365px;
+    padding-top: 21px;
+    height: 83px;
+}
+.name {
+    font-size: 2rem;
+    font-family: 'Thasadith', sans-serif;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+.intro-title {
+    font-size: 2rem;
+    font-family: 'Thasadith', sans-serif;
+    font-weight: 700; 
+    padding-bottom: 25px;
+}
+.intro {
+    width: 600px;
+    padding: 45px 40px 30px 140px;
+    float: left;
+}
+.intro-info {
+    font-size: 1.2rem;
+    line-height: 27px;
+    text-align: justify;
+    font-family: 'Thasadith', sans-serif;
+}
+.projects {
+    height: 245px;
+    padding: 45px 22px 30px 800px;    
+}
+.projects-title {
+    font-size: 2rem;
+    font-family: 'Thasadith', sans-serif;
+    font-weight: 700; 
+    padding-bottom: 25px;    
+}
+.projects-gallery {
+    display: inline-flex;
+    font-family: 'Thasadith', sans-serif;
+    font-size: 1.2rem;
+}
+.project-photo-card {
+    width: 200px;
+    height: 151px;
+    background-size: cover;
+    margin-bottom: 7px;
+    border-radius: 1px;
+    box-shadow: 0 0 11px 1px rgb(190, 190, 190);
+}
+.project-photo-1 {
+    width: 191px;
+    height: 141px;
+    background-image: url(./images/project-1.png);
+    background-size: cover;
+    margin: 5px;
+    position: absolute;
+}
+.project-card {
+    margin-right: 20px;
+}
+.footer {
+    height: 40px;
+    border-top: 2px solid #CCCCCC;
+    text-align: center;
+    font-family: 'Thasadith', sans-serif;
+    padding-top: 21px;
+    font-size: 1.2rem;
+    background-color: #E9E9E9;
 }
   
